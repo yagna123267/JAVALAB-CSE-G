@@ -24,7 +24,7 @@ class DefaultPrimitiveType {
 }
 ```
 ### Output:
-![output for Default Primitvie Data Types]()
+![output for Default Primitvie Data Types](https://github.com/yagna123267/JAVALAB-CSE-G/blob/a47af7b118f71ae4566be34695f6ceb058e8d862/1a%20output.png)
 
 ## TITLE : 1b.) Quadratic equation solution
 ```java
