@@ -65,4 +65,4 @@ class QuadraticEquationSolution {
 }
 ```
 ### Output:
-![output for quadratic equation]()
+![output for quadratic equation](https://github.com/yagna123267/JAVALAB-CSE-G/blob/78fbcf672a431ebdb727727878c938b2a5610b65/1b%20output.png)
