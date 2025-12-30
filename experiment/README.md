@@ -116,7 +116,7 @@ class sum {
 }
 ```
 ### output:
-![output for implement overloading methods in java]
+![output for implement overloading methods in java](https://github.com/yagna123267/JAVALAB-CSE-G/blob/87c6d2b890197a51a0c92079afc9a8827fe5ae1e/2b.output.png)
 
 
 
