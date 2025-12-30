@@ -117,6 +117,34 @@ class sum {
 ```
 ### output:
 ![output for implement overloading methods in java](https://github.com/yagna123267/JAVALAB-CSE-G/blob/87c6d2b890197a51a0c92079afc9a8827fe5ae1e/2b.output.png)
+## title: 2c) implement constructor in java.
+```
+ class student {
+     String Sname;
+     int Sage;
+     double Smarks;
+     student(String name,int age,double marks) {
+     Sname = name;
+     Sage = age;
+     Smarks = marks;
+     }
+     void display() {
+     System.out.println("student name:"+Sname);
+     System.out.println("student age:" +Sage);
+     System.out.println("student marks:" +Smarks);
+     }
+}
+
+class main {
+     public static void main(String args[]) {
+      student S = new student("yagna:",19,600);
+      S.display();
+}
+}
+```
+### output:
+![output for implement constructor in java](
+
 
 
 
