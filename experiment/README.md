@@ -143,7 +143,7 @@ class main {
 }
 ```
 ### output:
-![output for implement constructor in java](
+![output for implement constructor in java](https://github.com/yagna123267/JAVALAB-CSE-G/blob/f15f8a1075dfaf6358cd64611af8a8fb9e1fc50e/2c.output.png)
 
 
 
