@@ -66,3 +66,32 @@ class QuadraticEquationSolution {
 ```
 ### Output:
 ![output for quadratic equation](https://github.com/yagna123267/JAVALAB-CSE-G/blob/78fbcf672a431ebdb727727878c938b2a5610b65/1b%20output.png)
+## title: 2a) implement class mechanism in java.
+'''java
+ class Rectangle {
+        double length;
+        double breadth;
+ double area() {
+        return length * breadth;
+        }
+ double perimeter() {
+        return 2*(length + breadth);
+        }
+ }
+class main {
+     public static void main(String args[]) {
+      Rectangle rect = new Rectangle();
+      rect.length = 12;
+      rect.breadth = 20;
+      double area = rect.area();
+      double perimeter = rect.perimeter();
+  System.out.println("Area of given Rectangle:"+area);
+  System.out.println("perimeter of given rectangle:"+perimeter);
+}
+}
+'''
+### output:
+![output for mechanism in java](
+
+
+
