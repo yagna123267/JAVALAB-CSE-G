@@ -208,7 +208,7 @@ import java.util.Scanner;
     }
 ```
 ## output:
-![output for fibanocis series](<img width="489" height="94" alt="image" src="https://github.com/user-attachments/assets/b97b8556-cad7-49d6-95e3-242b3bb56bf1" />)
+![output for fibanocis series](https://github.com/yagna123267/JAVALAB-CSE-G/blob/d88fe64cbf0a0acde88fe79b424c83a81dccaf53/experiment/Screenshot%202026-01-06%20095921.jpgt.jpg)
 
 
 
