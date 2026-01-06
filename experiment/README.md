@@ -144,6 +144,88 @@ class main {
 ```
 ### output:
 ![output for implement constructor in java](https://github.com/yagna123267/JAVALAB-CSE-G/blob/f15f8a1075dfaf6358cd64611af8a8fb9e1fc50e/2c.output.png)
+## title: additional experiment 2 :fibanocis series.
+```
+class Fibonacis {
+     int firstNumber;
+     int secondNumber;
+     int thirdNumber;
+     int sum;
+     int sizeofFibsequence;
+     Fibonacis(int size) {
+     firstNumber = 0;
+     secondNumber = 1;
+     thirdNumber = 0;
+     sum = 0;
+     sizeofFibsequence = size;
+   }
+     void generateFibsequence() {
+       while(sizeofFibsequence > 0) {
+         if(sizeofFibsequence == 1)
+       System.out.print(firstNumber + ".");
+class Fibonacis {
+     int thirdNumber;
+     int sum;
+     int sizeofFibsequence;
+     Fibonacis(int size) {
+     firstNumber = 0;
+     secondNumber = 1;
+     thirdNumber = 0;
+     sum = 0;
+     sizeofFibsequence = size;
+   }
+     void generateFibsequence() {
+       while(sizeofFibsequence > 0) {
+         else
+      System.out.print(firstNumber + ",");
+      sizeofFibsequence--;
+      sum += firstNumber;
+      thirdNumber = firstNumber + secondNumber;
+      firstNumber = secondNumber;
+      secondNumber = thirdNumber;
+      }
+    }
+    int getFibsum() {
+        return sum;
+      }
+    }
+import java.util.Scanner;
+  class main {
+     public static void main(String args[]) {
+       System.out.print("enter the sizeof the sequence:");
+       Scanner Sc = new Scanner(System.in);
+       int size = Sc.nextInt();
+       if(size > 0) {
+          Fibonacis Fib = new Fibonacis(size);
+      System.out.print("Fibonacciseries are:");
+                 Fib.generateFibsequence();
+
+      System.out.println("the sum of Fibonacciseries are:" + Fib.getFibsum());
+}
+      else
+        System.out.println("Fibonacci sequence and sum cannot be calculated:");
+      }
+    }
+```
+## output:
+![output for fibanocis series](<img width="489" height="94" alt="image" src="https://github.com/user-attachments/assets/b97b8556-cad7-49d6-95e3-242b3bb56bf1" />)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
