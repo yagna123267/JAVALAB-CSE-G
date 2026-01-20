@@ -209,6 +209,36 @@ import java.util.Scanner;
 ```
 ## output:
 ![output for fibanocis series](https://github.com/yagna123267/JAVALAB-CSE-G/blob/d88fe64cbf0a0acde88fe79b424c83a81dccaf53/experiment/Screenshot%202026-01-06%20095921.jpgt.jpg)
+## title: experiment 3 :Student and main.
+```  class Student {
+        String name;
+        int age;
+        double marks;
+        Student() {
+        }
+        Student(String name,int age,double marks) {
+                this.name = name;
+                this.age = age;
+                this.marks = marks;
+                }
+                void display() {
+                System.out.println("name:" +name);
+                System.out.println("age:" +age);
+                System.out.println("marks:" +marks);
+                }
+             }
+   class main {
+     public static void main(String args[]) {
+            Student std = new student();
+             Std.display();
+            student std1 = new student("yagna", 12,400);
+             Std1.display();
+       }
+      }
+```
+## output :
+![output for student ](
+
 
 
 
