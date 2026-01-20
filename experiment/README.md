@@ -311,7 +311,47 @@ class main {
 }
 ```
 ## output:
-![output for binarysearch](https://github.com/yagna123267/JAVALAB-CSE-G/blob/b153d3674e798a4a1f8a2dfbac0b8308b5e86d69/3c.output.png)
+![output for binarysearch](
+## title 3c:bubblesort
+```
+  class Bubblesort {
+
+    void bubbleSort(int arr[]) {
+        int n = arr.length;
+        for(int i = 0; i < n - 1; i++) {
+            for(int j = 0; j < n - i - 1; j++) {
+                if(arr[j] > arr[j + 1]) {
+                    int temp = arr[j + 1];
+                    arr[j + 1] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
+}
+import java.util.Scanner;
+class main {
+   public static void main(String args[]) {
+      System.out.print("enter the size of array:");
+      Scanner sc = new Scanner(System.in);
+      int size = sc.nextInt();
+      int integer[] = new int[size];
+      for(int i= 0; i < size; i++) {
+           System.out.println("enter the value of integer at index" + (i+1) + ":");
+           integer[i] = sc.nextInt();
+        }
+        Bubblesort bs = new Bubblesort();
+        bs.Bubblesort(integer);
+        System.out.print("the sorted integers:");
+        for(int i=0;i<size;i++) 
+        System.out.print(integer[i] + ",");
+        System.out.println("\b\b.");
+     }
+  }
+```
+## output:
+![output for bubblesort](
+
 
 
 
