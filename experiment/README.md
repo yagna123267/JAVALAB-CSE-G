@@ -209,7 +209,7 @@ import java.util.Scanner;
 ```
 ## output:
 ![output for fibanocis series](https://github.com/yagna123267/JAVALAB-CSE-G/blob/d88fe64cbf0a0acde88fe79b424c83a81dccaf53/experiment/Screenshot%202026-01-06%20095921.jpgt.jpg)
-## title: experiment 3 :Student and main.
+## title: experiment 3a) :Student and main.
 ```  class Student {
         String name;
         int age;
@@ -238,6 +238,80 @@ import java.util.Scanner;
 ```
 ## output :
 ![output for student ](https://github.com/yagna123267/JAVALAB-CSE-G/blob/c4595132e7b378e4ed2888971c7ea1446df8b85f/3a.output.png)
+## title : 3b) Binarysearch
+```
+import java.util.Scanner;
+
+class Binarysearch {
+    int list[];
+    int size;
+
+    Binarysearch(int size) {
+        this.size = size;
+        list = new int[size];
+    }
+
+    void setlist() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the list items in Ascending order:");
+        
+        for (int i = 0; i < size; i++) {
+            System.out.println("Enter value " + (i + 1) + ": ");
+            list[i] = sc.nextInt();
+        }
+    }
+
+    void getlist() {
+        for (int i = 0; i < size; i++)
+            System.out.print(list[i] + ",");
+        System.out.println("\b\b.");
+    }
+
+    int Binarysearch(int key) {
+        int low = 0;
+        int high = list.length - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+
+            if (list[mid] == key)
+                return mid;
+
+            else if (list[mid] < key)
+                low = mid + 1;
+
+            else
+                high = mid - 1;
+        }
+
+        return -1; 
+    }
+}
+import java.util.Scanner;
+
+class main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        Binarysearch bs = new Binarysearch(10);
+
+        bs.setlist();
+        bs.getlist();
+
+        System.out.println("Enter the key to search: ");
+        int key = sc.nextInt();
+
+        int index = bs.Binarysearch(key);
+
+        if (index == -1)
+            System.out.println("Key item does NOT exist.");
+        else
+            System.out.println("Key item exists at index: " + index);
+    }
+}
+```
+## output:
+![output for binarysearch](
 
 
 
