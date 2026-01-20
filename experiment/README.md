@@ -237,7 +237,7 @@ import java.util.Scanner;
       }
 ```
 ## output :
-![output for student ](
+![output for student ](https://github.com/yagna123267/JAVALAB-CSE-G/blob/c4595132e7b378e4ed2888971c7ea1446df8b85f/3a.output.png)
 
 
 
