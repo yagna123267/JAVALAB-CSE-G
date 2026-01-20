@@ -311,7 +311,7 @@ class main {
 }
 ```
 ## output:
-![output for binarysearch](
+![output for binarysearch](https://github.com/yagna123267/JAVALAB-CSE-G/blob/0989a1838437434cad9a48c834f3f2faeaf873ce/3b.output.png)
 ## title 3c:bubblesort
 ```
   class Bubblesort {
