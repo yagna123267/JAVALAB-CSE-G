@@ -350,7 +350,7 @@ class main {
   }
 ```
 ## output:
-![output for bubblesort](
+![output for bubblesort](https://github.com/yagna123267/JAVALAB-CSE-G/blob/15db45c5bb60ddab7bcab103a004ef9e1a49a330/3c.output.png)
 
 
 
