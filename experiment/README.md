@@ -311,7 +311,7 @@ class main {
 }
 ```
 ## output:
-![output for binarysearch](
+![output for binarysearch](https://github.com/yagna123267/JAVALAB-CSE-G/blob/b153d3674e798a4a1f8a2dfbac0b8308b5e86d69/3c.output.png)
 
 
 
