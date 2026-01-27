@@ -398,6 +398,50 @@ class TestEmployee {
 ```
 ## output:
 ![output for single inheritance](https://github.com/yagna123267/JAVALAB-CSE-G/blob/cb5d79b00a67c7e4c671591b8c3e8f90ed03eed5/experiment/4a.output.png)
+## title: 4b) multilevel inherutance 
+```
+ class Bicycle {
+     String PedalType;
+     void showBicycleInfo() {
+   System.out.println("This is a bicycle with Pedals.");
+   System.out.println("PedalType:" + PedalType);
+  }
+}
+ class Motorbike extends Bicycle {
+       int engineCapacity;
+   void showMotorbikeInfo() {
+   System.out.println("This Motorbike has an engine.");
+   System.out.println("engineCapacity:" +engineCapacity + "cc");
+  }
+}
+  class Electricbike extends Motorbike {
+      int batteryCapacity;
+    void showElectricbikeInfo() {
+   System.out.println("This electric bike has an electric motor and battery.");
+   System.out.println("batteryCapacity:" + batteryCapacity + "Wh");
+   }
+}
+class TestVehicle {
+     public static void main(String args[]) {
+     Electricbike ebike = new Electricbike();
+     ebike.PedalType = "standard Pedals:";
+     ebike.engineCapacity = 268;
+     ebike.batteryCapacity = 666;
+     ebike.showBicycleInfo();
+     ebike.showMotorbikeInfo();
+     ebike.showElectricbikeInfo();
+   }
+}
+``
+## output:
+![output for multilevel inheritance](
+
+
+
+
+
+
+
 
 
 
