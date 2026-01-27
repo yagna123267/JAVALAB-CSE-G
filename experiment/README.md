@@ -432,11 +432,48 @@ class TestVehicle {
      ebike.showElectricbikeInfo();
    }
 }
-``
+```
 ## output:
-![output for multilevel inheritance](
+![output for multilevel inheritance](https://github.com/yagna123267/JAVALAB-CSE-G/blob/72b7a2d8feeaecac5e74449dc7b2777079de56a1/experiment/4b.output.png)
+## title 4c) dimensions
+```
+  class Bicycle {
+     String pedalType;
+     void showBicycleInfo() {
+         System.out.println("This is a bicycle with pedals:");
+         System.out.println("Pedal Type :" + pedalType);
+     }
+}
+  class ElectricBike extends Motorbike {
+     int batteryCapacity;
 
+     void showElectricBikeInfo() {
+         System.out.println("This electric bike has an electric motor and battery.");
+         System.out.println("Battery Capacity : " +batteryCapacity + "Wh");
+     }
+}
+  class Motorbike extends Bicycle {
+     int engineCapacity;
 
+     void showMotorbikeInfo() {
+        System.out.println("this motorbike has an engine.");
+        System.out.println("Engine Capacity :" +engineCapacity + "cc");
+     }
+}
+ public class TestVehicle {
+    public static void main(String[] args) {
+        ElectricBike eBike = new ElectricBike();
+        eBike.pedalType = "Standard pedals";
+        eBike.engineCapacity = 255;
+        eBike.batteryCapacity = 400;
+        eBike.showBicycleInfo();
+        eBike.showMotorbikeInfo();
+        eBike.showElectricBikeInfo();
+      }
+ }
+```
+## output:
+![output for Figure](
 
 
 
