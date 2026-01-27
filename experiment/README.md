@@ -437,43 +437,50 @@ class TestVehicle {
 ![output for multilevel inheritance](https://github.com/yagna123267/JAVALAB-CSE-G/blob/72b7a2d8feeaecac5e74449dc7b2777079de56a1/experiment/4b.output.png)
 ## title 4c) dimensions
 ```
-  class Bicycle {
-     String pedalType;
-     void showBicycleInfo() {
-         System.out.println("This is a bicycle with pedals:");
-         System.out.println("Pedal Type :" + pedalType);
-     }
-}
-  class ElectricBike extends Motorbike {
-     int batteryCapacity;
-
-     void showElectricBikeInfo() {
-         System.out.println("This electric bike has an electric motor and battery.");
-         System.out.println("Battery Capacity : " +batteryCapacity + "Wh");
-     }
-}
-  class Motorbike extends Bicycle {
-     int engineCapacity;
-
-     void showMotorbikeInfo() {
-        System.out.println("this motorbike has an engine.");
-        System.out.println("Engine Capacity :" +engineCapacity + "cc");
-     }
-}
- public class TestVehicle {
-    public static void main(String[] args) {
-        ElectricBike eBike = new ElectricBike();
-        eBike.pedalType = "Standard pedals";
-        eBike.engineCapacity = 255;
-        eBike.batteryCapacity = 400;
-        eBike.showBicycleInfo();
-        eBike.showMotorbikeInfo();
-        eBike.showElectricBikeInfo();
+    abstract class Figure {
+      double dim1;
+      double dim2;
+      Figure(double dim1,double dim2) {
+      this.dim1 = dim1;
+      this.dim2 = dim2;
       }
+ abstract double area();
  }
+  abstract class Figure {
+      double dim1;
+      double dim2;
+      Figure(double dim1,double dim2) {
+      this.dim1 = dim1;
+      this.dim2 = dim2;
+      }
+ abstract double area();
+ }
+  class Triangle extends Figure {
+      Triangle(double base,double height) {
+              super(base,height);
+      }
+     double area() {
+            double result = 0.5*dim1*dim2;
+            return result;
+     }
+}
+  class TestFigure {
+       public static void main(String args[]) {
+
+       Figure f1 = new Rectangle(99.9,66.6);
+       Figure f2 = new Triangle(88.8,55.5);
+
+
+       System.out.println("Area of Rectangle = " +f1.area());
+       System.out.println("Area of Triangle = " +f2.area());
+       }
+}
 ```
 ## output:
 ![output for Figure](
+```
+## output:
+![output for Figure](https://github.com/yagna123267/JAVALAB-CSE-G/blob/e5a95dfb1e072e25edcd3ba9235b85333cc47a8e/experiment/4c.outputt.png)
 
 
 
