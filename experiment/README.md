@@ -351,6 +351,53 @@ class main {
 ```
 ## output:
 ![output for bubblesort](https://github.com/yagna123267/JAVALAB-CSE-G/blob/15db45c5bb60ddab7bcab103a004ef9e1a49a330/3c.output.png)
+## title : 4a) single inheritance
+```
+ class Person {
+      String name;
+      int age;
+      Person(String name, int age) {
+           this.name = name;
+           this.age = age;
+     }
+     void displayPersonDetails() {
+      System.out.println("Name:" +name);
+      System.out.println("Age:" +age);
+   }
+ }
+
+
+class Employee extends Person {
+        double annualSalary;
+        int yearofJoining;
+        String nationalInsuranceNumber;
+        Employee(String name,int age,double annualSalary,int yearofJoining,String nationalInsuranceNumber) {
+                super(name,age);
+                this.annualSalary = annualSalary;
+                this.yearofJoining = yearofJoining;
+                this.nationalInsuranceNumber =nationalInsuranceNumber;
+       }
+       void displayEmployeeDetails() {
+            displayPersonDetails();
+       System.out.println("AnnualSalary:" +annualSalary);
+       System.out.println("YearofJoining:" +yearofJoining);
+       System.out.println("NationalInsuranceNumber:" +nationalInsuranceNumber);
+     }
+  }
+
+
+
+class TestEmployee {
+     public static void main(String args[]) {
+  Employee emp1 = new Employee("yagna",20,100000,2029,"NI807468YT");
+             emp1.displayEmployeeDetails();
+           }
+}
+
+
+```
+## output:
+![output for single inheritance]
 
 
 
