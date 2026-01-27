@@ -397,7 +397,7 @@ class TestEmployee {
 
 ```
 ## output:
-![output for single inheritance]
+![output for single inheritance](https://github.com/yagna123267/JAVALAB-CSE-G/blob/cb5d79b00a67c7e4c671591b8c3e8f90ed03eed5/experiment/4a.output.png)
 
 
 
