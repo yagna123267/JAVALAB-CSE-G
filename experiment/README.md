@@ -434,7 +434,7 @@ class TestVehicle {
 }
 ``
 ## output:
-![output for multilevel inheritance](https://github.com/yagna123267/JAVALAB-CSE-G/blob/5afb7ac166f21979094faa4a93d81178cbd56c7c/experiment/4b.output.png)
+![output for multilevel inheritance](
 
 
 
