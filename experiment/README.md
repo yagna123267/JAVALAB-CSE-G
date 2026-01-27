@@ -398,7 +398,7 @@ class TestEmployee {
 ```
 ## output:
 ![output for single inheritance](https://github.com/yagna123267/JAVALAB-CSE-G/blob/cb5d79b00a67c7e4c671591b8c3e8f90ed03eed5/experiment/4a.output.png)
-## title: 4b) multilevel inherutance 
+## title: 4b) multilevel inheritance 
 ```
  class Bicycle {
      String PedalType;
@@ -434,7 +434,7 @@ class TestVehicle {
 }
 ``
 ## output:
-![output for multilevel inheritance](
+![output for multilevel inheritance](https://github.com/yagna123267/JAVALAB-CSE-G/blob/5afb7ac166f21979094faa4a93d81178cbd56c7c/experiment/4b.output.png)
 
 
 
