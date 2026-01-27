@@ -477,9 +477,6 @@ class TestVehicle {
 }
 ```
 ## output:
-![output for Figure](
-```
-## output:
 ![output for Figure](https://github.com/yagna123267/JAVALAB-CSE-G/blob/e5a95dfb1e072e25edcd3ba9235b85333cc47a8e/experiment/4c.outputt.png)
 
 
