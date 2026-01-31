@@ -557,7 +557,7 @@ output:
 
 ```
 output:
-![output for perfect number](
+![output for perfect number](https://github.com/yagna123267/JAVALAB-CSE-G/blob/d1053de1bddb9a0620b3697310a0f053de5254ab/Screenshot%202026-01-31%20162330.jpg)
 
 
 
