@@ -478,6 +478,32 @@ class TestVehicle {
 ```
 ## output:
 ![output for Figure](https://github.com/yagna123267/JAVALAB-CSE-G/blob/e5a95dfb1e072e25edcd3ba9235b85333cc47a8e/experiment/4c.outputt.png)
+## title Insert substring
+```
+import java.util.Scanner;
+   class InsertSubstring {
+      public static void main(String args[]) {
+        Scanner SC = new Scanner(System.in);
+     System.out.print("MainString:");
+     String mainString = SC.nextLine();
+     System.out.print("SubString:");
+     String Substring = SC.nextLine();
+     System.out.print("Position:");
+     int Position = SC.nextInt();
+     if(Position < 0 ||Position > mainString.length()) {
+      System.out.print("Invalid Position:");
+     } else {
+      String FirstPart = mainString.substring(0,Position);
+      String SecondPart = mainString.substring(Position);
+      String resultString = FirstPart + Substring + SecondPart;
+       System.out.println("The resultant string: " + resultString);
+   }
+ SC.close();
+  }
+}
+```
+output:
+![output for insert substring](
 
 
 
