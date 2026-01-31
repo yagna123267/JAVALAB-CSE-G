@@ -506,7 +506,58 @@ output:
 ![output for insert substring](
 
 
+## title Palindrome
+```
+ import java.util.Scanner;
+   class PalindromeCheck {
+    public static void main(String args[]) {
+      Scanner SC = new Scanner(System.in);
+    System.out.print("Enter a String:");
+    String str = SC.nextLine();
+    int start = 0;
+    int end = str.length()-1;
+    while(start < end) {
+        if(str.charAt(start) != str.charAt(end)) {
+    System.out.println("The String \"" + str + "\" is not a Palindrome");
+     SC.close();
+     return ;
+   }
+   start ++;
+   end --;
+ }
+ System.out.println("The String \"" + str + "\" is a Palindrome");
+ SC.close();
+   }
+ }
+```
+output:
+![output for palindrome](
 
+## title perfecr number
+```
+ import java.util.Scanner;
+   class PerfectNumber {
+     public static void main(String args[]) {
+       Scanner SC = new Scanner(System.in);
+      System.out.print("Enter a number:");
+      int num = SC.nextInt();
+      int sum = 0;
+      for(int i=1;i<num-1;i++) {
+         if(num %i == 0) {
+             sum =sum +i;
+          }
+      }
+     if(sum == num) {
+       System.out.println(num + "is a PerfectNumber.");
+     } else {
+       System.out.println(num + "is not a PerfectNumber.");
+       }
+     }
+}
+
+```
+output:
+![output for perfect number](
 
 
 
