@@ -503,7 +503,7 @@ import java.util.Scanner;
 }
 ```
 output:
-![output for insert substring](
+![output for insert substring](https://github.com/yagna123267/JAVALAB-CSE-G/blob/491639fd6009618e977fcef8520affd83f12ca3d/substring.png)
 
 
 ## title Palindrome
@@ -533,7 +533,7 @@ output:
 output:
 ![output for palindrome](https://github.com/yagna123267/JAVALAB-CSE-G/blob/c6eaeaec56e17eb47948e1d6e8c09c4ca33148d2/tt.jpg)
 
-## title perfecr number
+## title perfect number
 ```
  import java.util.Scanner;
    class PerfectNumber {
