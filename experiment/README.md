@@ -531,7 +531,7 @@ output:
  }
 ```
 output:
-![output for palindrome](
+![output for palindrome](https://github.com/yagna123267/JAVALAB-CSE-G/blob/c6eaeaec56e17eb47948e1d6e8c09c4ca33148d2/tt.jpg)
 
 ## title perfecr number
 ```
