@@ -640,7 +640,7 @@ public class TestVehicle {
     }
 }
 ```
-![output for](
+![output for](https://github.com/yagna123267/JAVALAB-CSE-G/blob/95dbf7b035aa607d166415a9e90fd93ce657c3b9/exp5c.png)
 
 
 
