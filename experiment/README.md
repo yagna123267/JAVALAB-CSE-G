@@ -594,7 +594,7 @@ class SelectionSort implements Sortable {
     }
 }
 ```
-![output for Sortable](
+![output for Sortable](https://github.com/yagna123267/JAVALAB-CSE-G/blob/5926dcd6b53faf7e78d663bd5702ff8e0c17b4af/exp5a.png)
 
  ## title: 5b) Vehicle plymorphism:
  ```
