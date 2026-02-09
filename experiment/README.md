@@ -558,6 +558,102 @@ output:
 ```
 output:
 ![output for perfect number](https://github.com/yagna123267/JAVALAB-CSE-G/blob/d1053de1bddb9a0620b3697310a0f053de5254ab/Screenshot%202026-01-31%20162330.jpg)
+## title : 5a) sortable
+```
+interface Sortable {
+    void sort(int arr[]);
+}
+class BubbleSort implements Sortable {
+    public void sort(int arr[]) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+}
+class SelectionSort implements Sortable {
+    public void sort(int arr[]) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[min]) {
+                    min = j;
+                }
+            }
+            int temp = arr[min];
+            arr[min] = arr[i];
+            arr[i] = temp;
+        }
+    }
+}
+```
+![output for Sortable](
+
+ ## title: 5b) Vehicle plymorphism:
+ ```
+  class Vehicle {
+      void run() {
+         System.out.println("Vehicle is running");
+        }
+     }
+class Car extends Vehicle {
+          void run() {
+       System.out.println("Car is running on four wheels");
+      }
+   }
+class Bike extends Vehicle {
+        void run() {
+    System.out.println("Bike is running on two wheels");
+   }
+}
+public class TestVehicle {
+    public static void main(String[] args) {
+        Vehicle v;
+        v = new Car();
+        v.run();
+        v = new Bike();
+        v.run();
+        v = new Vehicle();
+        v.run();
+    }
+}
+```
+![output for](
+
+## title: 5c) StringBufferDelete 
+```
+ class StringBufferDelete {
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("Java Programming");
+        System.out.println("Original String: " + sb);
+        sb.deleteCharAt(4);
+        System.out.println("After deleting character at index 4: " + sb);
+        sb.delete(0, 4);
+        System.out.println("After deleting characters from index 0 to 4: " + sb);
+    }
+}
+```
+![output for](
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
