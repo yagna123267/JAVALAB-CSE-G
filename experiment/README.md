@@ -625,7 +625,7 @@ public class TestVehicle {
     }
 }
 ```
-![output for](
+![output for](https://github.com/yagna123267/JAVALAB-CSE-G/blob/164f1e2a4c15d79fd328e727a80e1f1b32f0cf86/exp5b.png)
 
 ## title: 5c) StringBufferDelete 
 ```
