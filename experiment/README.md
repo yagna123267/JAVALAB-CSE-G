@@ -675,7 +675,7 @@ class ExceptionHandling {
 
 ```
 ## output:
-![output for 6a](
+![output for 6a](https://github.com/yagna123267/JAVALAB-CSE-G/blob/caedb566b2872f9cb82900966db15d5d66042404/6a.png)
 
 
 ## 6b)
