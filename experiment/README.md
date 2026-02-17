@@ -711,7 +711,7 @@ import java.util.InputMismatchException;
         }
 ```
 ## output:
-![output for 6b](
+![output for 6b](https://github.com/yagna123267/JAVALAB-CSE-G/blob/0b8078d22a3a80b367a57fdf9cbf6efb2e7bc215/6b.png)
 ## 6c)
 ```
 import java.util.Scanner;
