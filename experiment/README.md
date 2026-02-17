@@ -641,7 +641,122 @@ public class TestVehicle {
 }
 ```
 ![output for](https://github.com/yagna123267/JAVALAB-CSE-G/blob/95dbf7b035aa607d166415a9e90fd93ce657c3b9/exp5c.png)
+## 6a)
+```
+import java.util.Scanner;
 
+class ExceptionHandling {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the size of array:");
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter an element at index " + i + ":");
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println("Enter an index to access:");
+        int index = sc.nextInt();
+
+        try {
+            System.out.println("Enter an element at index " + index + " is: " + arr[index]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Invalid index! Please enter index between 0 and " + (n - 1));
+        }
+
+        sc.close();
+    }
+}
+
+```
+## output:
+![output for 6a](
+
+
+## 6b)
+```
+import java.util.Scanner;
+import java.util.InputMismatchException;
+  class MultipleCatch {
+   public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int [] arr = {1,2,3,4,5};
+      try {
+       System.out.println("Enter first number:");
+          int a = sc.nextInt();
+       System.out.println("Enter second number:");
+          int b = sc.nextInt();
+          int result = a/b;
+      System.out.println("Result =" +result);
+      System.out.println("Enter index to access array element:");
+          int index = sc.nextInt();
+      System.out.println("Element at index = " +arr[index]);
+         }
+       catch(ArithmeticException e) {
+        System.out.println("Error: Division by zero is not allowed.");
+        }
+        catch(InputMismatchException e) {
+          System.out.println("Error: Please enter numeric values only.");
+          }
+          catch(ArrayIndexOutOfBoundsException e) {
+            System.out.println("Some other error occured.");
+            }
+            System.out.println("Program continues...");
+          }
+        }
+```
+## output:
+![output for 6b](
+## 6c)
+```
+import java.util.Scanner;
+
+class BuiltinException {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        try {
+            System.out.print("Enter an integer to divide 100: ");
+            int n = sc.nextInt();
+            int result = 100 / n;
+            System.out.println("Result = " + result);
+
+            int arr[] = new int[3];
+            System.out.println("The array element of index 5 is " + arr[5]);
+
+            System.out.print("Enter a number as text: ");
+            String s = sc.next();
+            int a = Integer.parseInt(s);
+        }
+
+        catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception: Division by zero " + e);
+        }
+
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Out Of Bounds Exception: Invalid index");
+        }
+
+        catch (NumberFormatException e) {
+            System.out.println("Number Format Exception: Invalid numeric format");
+        }
+
+        catch (Exception e) {
+            System.out.println("Some other exception occurred: " + e);
+        }
+
+        sc.close();
+    }
+}
+```
+## output:
+![output for 6c](
 
 
 
