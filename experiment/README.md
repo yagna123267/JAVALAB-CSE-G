@@ -756,7 +756,7 @@ class BuiltinException {
 }
 ```
 ## output:
-![output for 6c](
+![output for 6c](https://github.com/yagna123267/JAVALAB-CSE-G/blob/92cccf6cf0e56f603faaaa33c80c3f1122509a1b/6c.png)
 
 
 
