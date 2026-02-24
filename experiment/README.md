@@ -757,13 +757,137 @@ class BuiltinException {
 ```
 ## output:
 ![output for 6c](https://github.com/yagna123267/JAVALAB-CSE-G/blob/92cccf6cf0e56f603faaaa33c80c3f1122509a1b/6c.png)
+## 7 
+```
+class InvalidCountryException extends Exception {
+          InvalidCountryException() {
+              super();
+              }
+              InvalidCountryException(String message) {
+              super(message);
+              }
+            }
+class UserRegion {
+
+    void registerUser(String userName, String userCountry) throws InvalidCountryException {
+
+        if (!userCountry.equals("India")) {
+            throw new InvalidCountryException("User outside India cannot be registered");
+        } else {
+            System.out.println("User registration done successfully");
+        }
+    }
+
+    public static void main(String args[]) {
+
+        UserRegion ur = new UserRegion();
+
+        try {
+            ur.registerUser("Ravi", "USA");
+        }
+        catch (InvalidCountryException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+```
+## OUTPUT:
+![output for 7 ](
+## 7b
+```
+class GoodMorningThread extends Thread {
+    public void run() {
+        while (true) {
+            System.out.println("Good Morning");
+            try {
+                Thread.sleep(1000); 
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+  class HelloThread extends Thread {
+     public void run() {
+          while(true) {
+            System.out.println("Hello");
+         try {
+            Thread.sleep(2000);
+         }
+         catch(InterruptedException e) {
+               System.out.print(e);
+           }
+        }
+    }
+  }
+   class WelcomeThread extends Thread {
+         public void run() {
+          while(true) {
+        System.out.println("Welcome");
+         try {
+           Thread.sleep(3000);
+         }
+         catch(InterruptedException e) {
+         System.out.print(e);
+         }
+       }
+     }
+   }
+  class TestThreads {
+     public static void main(String args[]) {
+            GoodMorningThread t1 = new GoodMorningThread();
+            HelloThread t2 = new HelloThread();
+            WelcomeThread t3 = new WelcomeThread();
 
 
+            t1.start();
+            t2.start();
+            t3.start();
+           }
+         }
+```
+![output for 7b ](
+## 7c
+```
+  class LongRunningTask extends Thread {
+        public void run() {
+      System.out.println("Long running task started...");
+      try {
+            for(int i=1;i<= 5;i++) {
+      System.out.println("Working..." +i);
+            Thread.sleep(1000);
+        }
+     }
+      catch(InterruptedException e) {
+       System.out.println(e);
+   }
+  System.out.println("Long running task completed!");
+      }
+     }
+public class ThreadDemo {
+    public static void main(String[] args) {
 
+        LongRunningTask task1 = new LongRunningTask();
 
+        System.out.println("Before starting task1: " + task1.isAlive());
 
+        task1.start();
 
+        System.out.println("After starting task1: " + task1.isAlive());
 
+        try {
+            System.out.println("Main thread waiting for task1 to complete using join()...");
+            task1.join();
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+
+        System.out.println("After task1 completion: " + task1.isAlive());
+        System.out.println("Main thread continues execution.");
+    }
+}
+```
+![output for 7c](
 
 
 
