@@ -757,7 +757,7 @@ class BuiltinException {
 ```
 ## output:
 ![output for 6c](https://github.com/yagna123267/JAVALAB-CSE-G/blob/92cccf6cf0e56f603faaaa33c80c3f1122509a1b/6c.png)
-## 7 
+## 7a
 ```
 class InvalidCountryException extends Exception {
           InvalidCountryException() {
@@ -792,7 +792,7 @@ class UserRegion {
 }
 ```
 ## OUTPUT:
-![output for 7 ](
+![output for 7a ](https://github.com/yagna123267/JAVALAB-CSE-G/blob/a342a636412c04c52bf84e40841d15315bc2d645/7a%20java.png)
 ## 7b
 ```
 class GoodMorningThread extends Thread {
@@ -846,7 +846,7 @@ class GoodMorningThread extends Thread {
            }
          }
 ```
-![output for 7b ](
+![output for 7b ](https://github.com/yagna123267/JAVALAB-CSE-G/blob/a342a636412c04c52bf84e40841d15315bc2d645/7b%20java.png)
 ## 7c
 ```
   class LongRunningTask extends Thread {
@@ -887,7 +887,7 @@ public class ThreadDemo {
     }
 }
 ```
-![output for 7c](
+![output for 7c](https://github.com/yagna123267/JAVALAB-CSE-G/blob/a342a636412c04c52bf84e40841d15315bc2d645/7c%20java.png)
 
 
 
