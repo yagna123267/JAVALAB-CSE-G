@@ -928,7 +928,7 @@ public class TestDaemon {
 }
 ```
 ## output:
-![output for 8a](
+![output for 8a](https://github.com/yagna123267/JAVALAB-CSE-G/blob/2879a526c6f98468a7c920f1410b0f4913563c42/8a%20java.png)
 ## Title: 8b
 ```
 
@@ -1034,7 +1034,7 @@ public class ProducerConsumerDemo {
 
 ```
 ## output:
-![output for 8b](
+![output for 8b](https://github.com/yagna123267/JAVALAB-CSE-G/blob/2879a526c6f98468a7c920f1410b0f4913563c42/8b%20java.png)
 
 
 
