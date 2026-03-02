@@ -1035,7 +1035,108 @@ public class ProducerConsumerDemo {
 ```
 ## output:
 ![output for 8b](https://github.com/yagna123267/JAVALAB-CSE-G/blob/2879a526c6f98468a7c920f1410b0f4913563c42/8b%20java.png)
+## Title: 11
+```
 
+class Reservation {
+    private int availableBerths;
+    Reservation(int berths) {
+        this.availableBerths = berths;
+    }
+    public synchronized void bookTicket(String name, int requestedBerths) {
+        System.out.println(name + " is requesting " + requestedBerths + " berths.");
+        if (requestedBerths <= availableBerths) {
+            System.out.println("Berths available. Booking for " + name);
+            availableBerths -= requestedBerths;   
+            System.out.println("Ticket booked for " + name);
+            System.out.println("Remaining berths: " + availableBerths);
+        } else {
+            System.out.println("No berths available for " + name);
+        }
+        System.out.println("--------------------------------");
+    }
+}
+class Person extends Thread {
+    private Reservation reservation;
+    private String personName;
+    private int berthsNeeded;
+
+    // Constructor
+    Person(Reservation reservation, String name, int berths) {
+        this.reservation = reservation;
+        this.personName = name;
+        this.berthsNeeded = berths;
+    }
+
+    // Step 6: run() method
+    public void run() {
+        reservation.bookTicket(personName, berthsNeeded);
+    }
+}
+ public class RailwayReservation {
+    public static void main(String[] args) {
+
+        // Step 1: Define total available berths
+        Reservation reservation = new Reservation(5);
+
+        // Create multiple Person threads
+        Person p1 = new Person(reservation, "Ravi", 2);
+        Person p2 = new Person(reservation, "Sita", 3);
+        Person p3 = new Person(reservation, "Arun", 2);
+
+        // Start threads
+        p1.start();
+        p2.start();
+        p3.start();
+
+   }
+}
+```
+## Output:
+![output for](
+## Title: addexp 5
+```
+import java.util.Scanner;
+class Cricket {
+    String playerName;
+    String teamName;
+    double battingAverage;
+    Cricket(String playerName, String teamName, double battingAverage) {
+        this.playerName = playerName;
+        this.teamName = teamName;
+        this.battingAverage = battingAverage;
+    }
+
+    void display() {
+        System.out.println("Player: " + playerName + 
+                           ", Batting Average: " + battingAverage);
+    }
+}
+  import java.util.Scanner;
+public class CricketMain {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // Input number of players
+        System.out.print("Enter number of players: ");
+        int n = sc.nextInt();
+        sc.nextLine(); // consume newline
+
+        // Declare array
+        Cricket[] players = new Cricket[n];
+
+        // Input player details
+        for (int i = 0; i < n; i++) {
+            System.out.println("\nEnter details for Player " + (i + 1));
+
+            System.out.print("Player Name: ");
+}
+}
+}
+```
+## Output:
+![output for](
 
 
 
