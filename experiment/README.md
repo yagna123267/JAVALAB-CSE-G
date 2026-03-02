@@ -1018,6 +1018,20 @@ class Producer extends Thread {
        Buffer(int size) {
          buffer = new int[size];
        }
+public class ProducerConsumerDemo {
+    public static void main(String[] args) {
+
+        Buffer buffer = new Buffer(5);
+        int N = 10;
+
+        Producer p = new Producer(buffer, N);
+        Consumer c = new Consumer(buffer, N);
+
+        p.start();
+        c.start();
+    }
+}
+
 ```
 ## output:
 ![output for 8b](
