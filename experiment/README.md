@@ -888,8 +888,139 @@ public class ThreadDemo {
 }
 ```
 ![output for 7c](https://github.com/yagna123267/JAVALAB-CSE-G/blob/a342a636412c04c52bf84e40841d15315bc2d645/7c%20java.png)
+## Title : 8a
+```
+  class DaemonThread extends Thread {
+     public void run() {
+      while(true) {
+     System.out.println("Daemon thread running");
+      try {
+      Thread.sleep(500);
+       }catch(InterruptedException e) {
+        System.out.print(e);
+         }
+      }
+}
+}
+  class UserThread extends Thread {
+     public void run() {
+          while(true) {
+          for(int i=1;i<=5;i++) {
+            System.out.println("User thread iteration:" +i);
+            try {  
+         Thread.sleep(1000);
+          }catch(InterruptedException e) {
+             System.out.print(e);
+        }
+      }
+    }
+}
+}
 
+public class TestDaemon {
+    public static void main(String[] args) {
+         UserThread  userThread = new UserThread();
+        DaemonThread daemonThread = new DaemonThread();
+        daemonThread.setDaemon(true);
+        userThread.start();
+        daemonThread.start();
+    }
+}
+```
+## output:
+![output for 8a](
+## Title: 8b
+```
 
+  class Buffer {
+       int[] buffer;
+       int count = 0;
+       int in = 0, out = 0;
+       Buffer(int size) {
+         buffer = new int[size];
+       }
+}
+class Consumer {
+
+    int[] buffer;
+    int count;
+    int out = 0;
+
+    Consumer(int[] buffer, int count) {
+        this.buffer = buffer;
+        this.count = count;
+    }
+
+    synchronized int consume() {
+        while (count == 0) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+            }
+        }
+
+        int item = buffer[out];
+        out = (out + 1) % buffer.length;
+        count--;
+        notify();
+        return item;
+    }
+}
+class Producer {
+
+    int[] buffer;
+    int count = 0;
+    int in = 0;
+
+    Producer(int size) {
+        buffer = new int[size];
+    }
+
+    synchronized void produce(int item) {
+        while (count == buffer.length) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+            }
+        }
+
+        buffer[in] = item;
+        in = (in + 1) % buffer.length;
+        count++;
+        notify();
+    }
+}
+class Producer extends Thread {
+    Buffer buffer;
+
+    Producer(Buffer buffer) {
+        this.buffer = buffer;
+    }
+
+    public void run() {
+        for (int i = 1; i <= 10; i++) {
+            buffer.produce(i);
+            System.out.println("Produced: " + i);
+        }
+    }
+}
+
+  class SharedBuffer {
+    int [] buffer;
+    int count = 0;
+    int in = 0, out = 0;
+    Buffer(int size) {
+       buffer new int[size];
+  class SharedBuffer {
+       int[] buffer;
+       int count = 0;
+       int in = 0, out = 0;
+       Buffer(int size) {
+         buffer = new int[size];
+       }
+```
+## output:
+![output for 8b](
 
 
 
