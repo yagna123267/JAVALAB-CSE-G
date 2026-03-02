@@ -1136,7 +1136,7 @@ public class CricketMain {
 }
 ```
 ## Output:
-![output for](
+![output for](https://github.com/yagna123267/JAVALAB-CSE-G/blob/0e94a0379acb125a101531b15d08a7e8c5bdf1df/addexp%205%20java.png)
 
 
 
