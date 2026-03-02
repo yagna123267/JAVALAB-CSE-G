@@ -1093,7 +1093,7 @@ class Person extends Thread {
 }
 ```
 ## Output:
-![output for](
+![output for](https://github.com/yagna123267/JAVALAB-CSE-G/blob/40a8aa35c0f534c2aeaed08574c9a3b22b5abae5/11%20java.png)
 ## Title: addexp 5
 ```
 import java.util.Scanner;
